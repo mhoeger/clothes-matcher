@@ -10,9 +10,13 @@
 		0CAF9BC319F5543600AB1E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */; };
 		0CAF9BC519F5543600AB1E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC419F5543600AB1E68 /* ViewController.swift */; };
 		0CAF9BC819F5543600AB1E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC619F5543600AB1E68 /* Main.storyboard */; };
-		0CAF9BCA19F5543600AB1E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC919F5543600AB1E68 /* Images.xcassets */; };
 		0CAF9BCD19F5543600AB1E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BCB19F5543600AB1E68 /* LaunchScreen.xib */; };
 		0CAF9BD919F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BD819F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift */; };
+		E18049261A7D820F00639252 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E180491B1A7D820F00639252 /* LaunchScreen.xib */; };
+		E18049271A7D820F00639252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E180491D1A7D820F00639252 /* Main.storyboard */; };
+		E18049281A7D820F00639252 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18049201A7D820F00639252 /* Clothing.swift */; };
+		E18049291A7D820F00639252 /* ClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18049211A7D820F00639252 /* ClothingCell.swift */; };
+		E180492B1A7D820F00639252 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18049241A7D820F00639252 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +35,16 @@
 		0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CAF9BC419F5543600AB1E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CAF9BC719F5543600AB1E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0CAF9BC919F5543600AB1E68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0CAF9BCC19F5543600AB1E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0CAF9BD219F5543600AB1E68 /* Clothes Match Single ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clothes Match Single ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAF9BD719F5543600AB1E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAF9BD819F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes_Match_Single_ViewTests.swift; sourceTree = "<group>"; };
+		E180491C1A7D820F00639252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		E180491E1A7D820F00639252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		E180491F1A7D820F00639252 /* Clothes Match Single View-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Clothes Match Single View-Bridging-Header.h"; sourceTree = "<group>"; };
+		E18049201A7D820F00639252 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		E18049211A7D820F00639252 /* ClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCell.swift; sourceTree = "<group>"; };
+		E18049241A7D820F00639252 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +86,14 @@
 		0CAF9BBF19F5543600AB1E68 /* Clothes Match Single View */ = {
 			isa = PBXGroup;
 			children = (
+				E180491A1A7D820F00639252 /* Base.lproj */,
+				E180491F1A7D820F00639252 /* Clothes Match Single View-Bridging-Header.h */,
+				E18049201A7D820F00639252 /* Clothing.swift */,
+				E18049211A7D820F00639252 /* ClothingCell.swift */,
+				E18049241A7D820F00639252 /* CustomCell.swift */,
 				0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */,
 				0CAF9BC419F5543600AB1E68 /* ViewController.swift */,
 				0CAF9BC619F5543600AB1E68 /* Main.storyboard */,
-				0CAF9BC919F5543600AB1E68 /* Images.xcassets */,
 				0CAF9BCB19F5543600AB1E68 /* LaunchScreen.xib */,
 				0CAF9BC019F5543600AB1E68 /* Supporting Files */,
 			);
@@ -110,6 +123,15 @@
 				0CAF9BD719F5543600AB1E68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E180491A1A7D820F00639252 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				E180491B1A7D820F00639252 /* LaunchScreen.xib */,
+				E180491D1A7D820F00639252 /* Main.storyboard */,
+			);
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18049261A7D820F00639252 /* LaunchScreen.xib in Resources */,
+				E18049271A7D820F00639252 /* Main.storyboard in Resources */,
 				0CAF9BC819F5543600AB1E68 /* Main.storyboard in Resources */,
 				0CAF9BCD19F5543600AB1E68 /* LaunchScreen.xib in Resources */,
-				0CAF9BCA19F5543600AB1E68 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAF9BC519F5543600AB1E68 /* ViewController.swift in Sources */,
+				E18049291A7D820F00639252 /* ClothingCell.swift in Sources */,
+				E18049281A7D820F00639252 /* Clothing.swift in Sources */,
 				0CAF9BC319F5543600AB1E68 /* AppDelegate.swift in Sources */,
+				E180492B1A7D820F00639252 /* CustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +276,22 @@
 				0CAF9BCC19F5543600AB1E68 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E180491B1A7D820F00639252 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E180491C1A7D820F00639252 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E180491D1A7D820F00639252 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E180491E1A7D820F00639252 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,6 +449,7 @@
 				0CAF9BDE19F5543600AB1E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CAF9BDF19F5543600AB1E68 /* Build configuration list for PBXNativeTarget "Clothes Match Single ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +458,7 @@
 				0CAF9BE119F5543600AB1E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
