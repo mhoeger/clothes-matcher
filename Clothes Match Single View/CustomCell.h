@@ -10,4 +10,8 @@
 
 @interface CustomCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *ClothingName;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ClothingPic;
+
 @end

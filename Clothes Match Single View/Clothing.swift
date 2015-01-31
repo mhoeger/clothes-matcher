@@ -11,11 +11,11 @@ import Foundation
 class Clothing
 {
     var mainColor = "Color"
-    var image = "None"
+    var myImage = "None"
     var itemType = "Top or Bottom"
     var description = ""
     
-    init(itemType: String, mainColor: String, image: String, description: String){
+    init(itemType: String, mainColor: String, myImage: String, description: String){
         if (description == ""){
             self.description = mainColor + " " + itemType
         }
@@ -23,7 +23,7 @@ class Clothing
             self.description = description
         }
         self.mainColor = mainColor
-        self.image = image
+        self.myImage = myImage
         self.itemType = itemType
     }
 }
