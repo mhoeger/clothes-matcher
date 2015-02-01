@@ -22,6 +22,8 @@
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
 		E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */; };
+		E14ED25F1A7DD51300A2EF44 /* PurpleShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */; };
+		E14ED2601A7DD51300A2EF44 /* BlackPants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */; };
 		E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */; };
 		E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */; };
 		E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6541A7DA9470097C8D7 /* Clothing.swift */; };
@@ -48,6 +50,8 @@
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParseStarterProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleShirt.png; sourceTree = "<group>"; };
+		E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackPants.jpg; sourceTree = "<group>"; };
 		E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKeys.swift; sourceTree = "<group>"; };
 		E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E1DCA6541A7DA9470097C8D7 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */,
+				E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */,
 				E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */,
 				E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */,
 				E1DCA6541A7DA9470097C8D7 /* Clothing.swift */,
@@ -203,8 +209,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14ED2601A7DD51300A2EF44 /* BlackPants.jpg in Resources */,
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
+				E14ED25F1A7DD51300A2EF44 /* PurpleShirt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
