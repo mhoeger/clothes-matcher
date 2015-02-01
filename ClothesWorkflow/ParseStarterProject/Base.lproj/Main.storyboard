@@ -54,7 +54,7 @@
         <!--User-->
         <scene sceneID="BXq-1f-03d">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="6Hq-No-z9m" customClass="CustomViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="6Hq-No-z9m" customClass="UserViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qag-FR-xih"/>
                         <viewControllerLayoutGuide type="bottom" id="CAz-95-6Qb"/>

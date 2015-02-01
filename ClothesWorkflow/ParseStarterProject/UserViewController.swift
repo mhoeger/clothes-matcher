@@ -9,9 +9,7 @@ import UIKit
 import Foundation
 
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    @IBOutlet weak var TestLabel: UILabel!
+class UserViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     //var touchTrue = true
     @IBOutlet var myCollectionView: UICollectionView!
@@ -91,7 +89,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             let cell:ClothingCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as ClothingCell
             rightImage.image = UIImage(named:"BlackPants.jpg")
             leftImage.image = cell.clothingImage.image
-            TestLabel = cell.clothingText
             println(cell.clothingText.text)
     }
     
