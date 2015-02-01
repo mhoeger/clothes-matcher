@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C09AD421A7DD94000567DBC /* ParseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09AD411A7DD94000567DBC /* ParseKeys.swift */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
 		81BA81501A49DA1800E65899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA814E1A49DA1800E65899 /* Main.storyboard */; };
@@ -24,14 +25,13 @@
 		E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */; };
 		E14ED25F1A7DD51300A2EF44 /* PurpleShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */; };
 		E14ED2601A7DD51300A2EF44 /* BlackPants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */; };
-		E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */; };
 		E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */; };
 		E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6541A7DA9470097C8D7 /* Clothing.swift */; };
-		E1DCA6591A7DA9470097C8D7 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */; };
 		E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C09AD411A7DD94000567DBC /* ParseKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKeys.swift; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* ParseStarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseStarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA81491A49DA1800E65899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,10 +52,8 @@
 		E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleShirt.png; sourceTree = "<group>"; };
 		E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackPants.jpg; sourceTree = "<group>"; };
-		E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKeys.swift; sourceTree = "<group>"; };
 		E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E1DCA6541A7DA9470097C8D7 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
-		E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,14 +103,13 @@
 				E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */,
 				E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */,
 				E1DCA6541A7DA9470097C8D7 /* Clothing.swift */,
-				E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */,
 				E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
-				E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */,
+				0C09AD411A7DD94000567DBC /* ParseKeys.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -242,12 +239,11 @@
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */,
-				E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */,
 				E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */,
-				E1DCA6591A7DA9470097C8D7 /* CustomViewController.swift in Sources */,
 				E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */,
+				0C09AD421A7DD94000567DBC /* ParseKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
