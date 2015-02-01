@@ -7,10 +7,9 @@
 //
 import UIKit
 import Foundation
+import Parse
 
 class UserViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    //var touchTrue = true
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var leftImage: UIImageView!
@@ -23,18 +22,14 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //--self.view.backgroundColor = UIColor.blackColor()
+        
         self.setUpClothing()
         self.myCollectionView.delegate = self
         self.myCollectionView.dataSource = self
-        
-        //--let testImage = UIImage(named: "BlackPants.jpg")
-        //--self.leftImage.image = UIImage(named: "BlackPants.jpg")
     }
 
  /*   func loadButtons(button: UIButton){
-        let buttonImage = UIImage(named: "PurpleShirt.png") as UIImage?
+        let buttonImage = UIImage(named: "PurpleShirt.jpg") as UIImage?
         let button   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
         button.frame = CGRectMake(40, 40, 100, 100)
         button.setImage(buttonImage, forState: UIControlState.Normal)
@@ -51,7 +46,7 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
 
         /*if (touchTrue){
             rightImage.image = sender.imageForState(.Normal)
-                //UIImage(named: "PurpleShirt.png")
+                //UIImage(named: "PurpleShirt.jpg")
             touchTrue = false
         }
         else{
@@ -62,11 +57,10 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
 */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func setUpClothing() {
-        var testClothing1 = Clothing(itemType: "Shirt", mainColor: "Purple", myImage: "PurpleShirt.png", description: "purple shirt")
+        var testClothing1 = Clothing(itemType: "Shirt", mainColor: "Purple", myImage: "PurpleShirt.jpg", description: "purple shirt")
         var testClothing2 = Clothing(itemType: "Pants", mainColor: "Black", myImage: "BlackPants.jpg", description: "black pants")
         
         clothesArray.append(testClothing1)
