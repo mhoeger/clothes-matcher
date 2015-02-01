@@ -12,10 +12,10 @@ import Foundation
 class UserViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     //var touchTrue = true
-    @IBOutlet var myCollectionView: UICollectionView!
+    
+    @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
-    
     //Replace this with database of clothes matching
     //Hashable? if dictionary, "Clothing" type must be.
     var clothesArray: [Clothing] = [Clothing]()

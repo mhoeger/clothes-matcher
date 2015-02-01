@@ -63,9 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-7O-uhf">
-                                <rect key="frame" x="418" y="50" width="198" height="519"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JV-bC-1dj">
                                 <rect key="frame" x="-43" y="34" width="198" height="519"/>
                             </imageView>
@@ -106,14 +103,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-7O-uhf">
+                                <rect key="frame" x="418" y="50" width="198" height="519"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" id="uTw-ZG-wbM" userLabel="User"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="leftImage" destination="7JV-bC-1dj" id="1b0-sF-eTU"/>
-                        <outlet property="myCollectionView" destination="t3T-Zj-JHi" id="zxG-tI-Uwk"/>
+                        <outlet property="leftImage" destination="7JV-bC-1dj" id="9wd-hE-Jwg"/>
+                        <outlet property="myCollectionView" destination="t3T-Zj-JHi" id="8ur-9P-V0g"/>
+                        <outlet property="rightImage" destination="Vcs-7O-uhf" id="aaL-hu-7hn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zS-dK-d31" sceneMemberID="firstResponder"/>

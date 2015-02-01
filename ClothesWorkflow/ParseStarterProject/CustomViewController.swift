@@ -14,6 +14,7 @@ class CustomViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet var myCollectionView: UICollectionView!
     @IBOutlet weak var leftImage: UIImageView!
     
+    
     //Replace this with database of clothes matching
     //Hashable? if dictionary, "Clothing" type must be.
     var clothesArray: [Clothing] = [Clothing]()
