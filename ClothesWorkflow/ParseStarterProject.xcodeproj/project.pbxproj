@@ -21,6 +21,8 @@
 		81BA817D1A49E0EA00E65899 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817C1A49E0EA00E65899 /* MobileCoreServices.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
+		E14ED2541A7DD0EE00A2EF44 /* MarieClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14ED2521A7DD0EE00A2EF44 /* MarieClothingCell.swift */; };
+		E14ED2551A7DD0EE00A2EF44 /* MarieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14ED2531A7DD0EE00A2EF44 /* MarieViewController.swift */; };
 		E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */; };
 		E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */; };
 		E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6541A7DA9470097C8D7 /* Clothing.swift */; };
@@ -46,6 +48,8 @@
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParseStarterProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		E14ED2521A7DD0EE00A2EF44 /* MarieClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarieClothingCell.swift; sourceTree = "<group>"; };
+		E14ED2531A7DD0EE00A2EF44 /* MarieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarieViewController.swift; sourceTree = "<group>"; };
 		E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKeys.swift; sourceTree = "<group>"; };
 		E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E1DCA6541A7DA9470097C8D7 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				E14ED2521A7DD0EE00A2EF44 /* MarieClothingCell.swift */,
+				E14ED2531A7DD0EE00A2EF44 /* MarieViewController.swift */,
 				E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */,
 				E1DCA6541A7DA9470097C8D7 /* Clothing.swift */,
 				E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */,
@@ -229,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14ED2541A7DD0EE00A2EF44 /* MarieClothingCell.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */,
 				E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */,
@@ -236,6 +243,7 @@
 				E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */,
+				E14ED2551A7DD0EE00A2EF44 /* MarieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
