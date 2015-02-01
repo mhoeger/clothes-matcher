@@ -13,11 +13,15 @@ class ClothingCell: UICollectionViewCell {
     @IBOutlet weak var clothingText: UILabel!
     
     @IBOutlet weak var clothingImage: UIImageView!
-    
+      
     func setCell(clothingDescriptionText: String, clothingImageFilename: String!){
-        
+        //myButton.setBackgroundImage(UIImage(named: (clothingImageFilename)), forState: .Normal)
         clothingImage.image = UIImage(named: (clothingImageFilename))
         sendSubviewToBack(clothingImage)
+        //sendSubviewToBack(myButton)
         clothingText.text = clothingDescriptionText
+        
+        /*myButton.addTarget(self, action: "btnTouched:", forControlEvents: UIControlEvents.TouchUpInside)*/
     }
+    
 }

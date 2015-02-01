@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CADA59F1A181BCB00948E4D /* ClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADA59E1A181BCB00948E4D /* ClothingCell.swift */; };
 		0CAF9BC319F5543600AB1E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */; };
 		0CAF9BC519F5543600AB1E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC419F5543600AB1E68 /* ViewController.swift */; };
 		0CAF9BC819F5543600AB1E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC619F5543600AB1E68 /* Main.storyboard */; };
 		0CAF9BCA19F5543600AB1E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BC919F5543600AB1E68 /* Images.xcassets */; };
 		0CAF9BCD19F5543600AB1E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BCB19F5543600AB1E68 /* LaunchScreen.xib */; };
 		0CAF9BD919F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BD819F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift */; };
+		0CAF9BEC19F5A85800AB1E68 /* PurpleShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BEB19F5A85800AB1E68 /* PurpleShirt.png */; };
+		0CAF9BEE19F5B0AE00AB1E68 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF9BED19F5B0AE00AB1E68 /* Clothing.swift */; };
+		0CAF9BF019F5B5F800AB1E68 /* BlackPants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF9BEF19F5B5F800AB1E68 /* BlackPants.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CADA59E1A181BCB00948E4D /* ClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCell.swift; sourceTree = "<group>"; };
 		0CAF9BBD19F5543600AB1E68 /* Clothes Match Single View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clothes Match Single View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAF9BC119F5543600AB1E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,10 @@
 		0CAF9BD219F5543600AB1E68 /* Clothes Match Single ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clothes Match Single ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAF9BD719F5543600AB1E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAF9BD819F5543600AB1E68 /* Clothes_Match_Single_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes_Match_Single_ViewTests.swift; sourceTree = "<group>"; };
+		0CAF9BE219F581E200AB1E68 /* Clothes Match Single View-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clothes Match Single View-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CAF9BEB19F5A85800AB1E68 /* PurpleShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PurpleShirt.png; path = ../../../../Desktop/PurpleShirt.png; sourceTree = "<group>"; };
+		0CAF9BED19F5B0AE00AB1E68 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		0CAF9BEF19F5B5F800AB1E68 /* BlackPants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BlackPants.jpg; path = ../../../../Downloads/BlackPants.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +86,17 @@
 		0CAF9BBF19F5543600AB1E68 /* Clothes Match Single View */ = {
 			isa = PBXGroup;
 			children = (
+				0CAF9BEF19F5B5F800AB1E68 /* BlackPants.jpg */,
+				0CADA59E1A181BCB00948E4D /* ClothingCell.swift */,
+				0CAF9BED19F5B0AE00AB1E68 /* Clothing.swift */,
+				0CAF9BEB19F5A85800AB1E68 /* PurpleShirt.png */,
 				0CAF9BC219F5543600AB1E68 /* AppDelegate.swift */,
 				0CAF9BC419F5543600AB1E68 /* ViewController.swift */,
 				0CAF9BC619F5543600AB1E68 /* Main.storyboard */,
 				0CAF9BC919F5543600AB1E68 /* Images.xcassets */,
 				0CAF9BCB19F5543600AB1E68 /* LaunchScreen.xib */,
 				0CAF9BC019F5543600AB1E68 /* Supporting Files */,
+				0CAF9BE219F581E200AB1E68 /* Clothes Match Single View-Bridging-Header.h */,
 			);
 			path = "Clothes Match Single View";
 			sourceTree = "<group>";
@@ -192,6 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAF9BEC19F5A85800AB1E68 /* PurpleShirt.png in Resources */,
+				0CAF9BF019F5B5F800AB1E68 /* BlackPants.jpg in Resources */,
 				0CAF9BC819F5543600AB1E68 /* Main.storyboard in Resources */,
 				0CAF9BCD19F5543600AB1E68 /* LaunchScreen.xib in Resources */,
 				0CAF9BCA19F5543600AB1E68 /* Images.xcassets in Resources */,
@@ -213,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAF9BC519F5543600AB1E68 /* ViewController.swift in Sources */,
+				0CADA59F1A181BCB00948E4D /* ClothingCell.swift in Sources */,
+				0CAF9BEE19F5B0AE00AB1E68 /* Clothing.swift in Sources */,
 				0CAF9BC319F5543600AB1E68 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Clothes Match Single View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clothes Match Single View/Clothes Match Single View-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +369,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Clothes Match Single View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clothes Match Single View/Clothes Match Single View-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +430,7 @@
 				0CAF9BDE19F5543600AB1E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CAF9BDF19F5543600AB1E68 /* Build configuration list for PBXNativeTarget "Clothes Match Single ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +439,7 @@
 				0CAF9BE119F5543600AB1E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
