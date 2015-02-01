@@ -16,6 +16,8 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+ClothesWorkflow/ParseStarterProject.xcodeproj/project.pbxproj
+
 
 # CocoaPods
 #
