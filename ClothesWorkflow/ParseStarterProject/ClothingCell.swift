@@ -23,5 +23,5 @@ class ClothingCell: UICollectionViewCell {
         
         /*myButton.addTarget(self, action: "btnTouched:", forControlEvents: UIControlEvents.TouchUpInside)*/
     }
-    
+        
 }
