@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
+import Parse
 
 class AdminViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
