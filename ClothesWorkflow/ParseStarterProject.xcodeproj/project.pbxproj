@@ -27,7 +27,6 @@
 		E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */; };
 		E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */; };
 		E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6541A7DA9470097C8D7 /* Clothing.swift */; };
-		E1DCA6591A7DA9470097C8D7 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */; };
 		E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		E1DCA6511A7D9D550097C8D7 /* ParseKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKeys.swift; sourceTree = "<group>"; };
 		E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E1DCA6541A7DA9470097C8D7 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
-		E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 				E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */,
 				E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */,
 				E1DCA6541A7DA9470097C8D7 /* Clothing.swift */,
-				E1DCA6551A7DA9470097C8D7 /* CustomViewController.swift */,
 				E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
@@ -244,7 +241,6 @@
 				E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */,
 				E1DCA6521A7D9D550097C8D7 /* ParseKeys.swift in Sources */,
 				E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */,
-				E1DCA6591A7DA9470097C8D7 /* CustomViewController.swift in Sources */,
 				E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */,
