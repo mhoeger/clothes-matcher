@@ -8,7 +8,6 @@
 import UIKit
 import Foundation
 
-
 class UserViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     //var touchTrue = true
@@ -16,6 +15,8 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
+
+    
     //Replace this with database of clothes matching
     //Hashable? if dictionary, "Clothing" type must be.
     var clothesArray: [Clothing] = [Clothing]()
@@ -83,13 +84,22 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
         return Int(UIInterfaceOrientationMask.Landscape.rawValue)
     }
     
+    
+    //Action after selecting item
     func collectionView(collectionView: UICollectionView,
         didSelectItemAtIndexPath indexPath: NSIndexPath){
-            println (indexPath)
-            let cell:ClothingCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as ClothingCell
+            //let indexPath = collectionView.indexPathsForSelectedItems()
+            //if (indexPath.count == 0){
+              //  println("EMPTY.")
+            //}
+            let currentCell:ClothingCell = collectionView.cellForItemAtIndexPath(indexPath) as ClothingCell
+                //[0] as NSIndexPath) as CustomCell
+
+            //let indexPath = collectionView.indexPathsForSelectedItems()
+            //let currentCell:CustomCell = collectionView.cellForItemAtIndexPath(indexPath) as CustomCell
             rightImage.image = UIImage(named:"BlackPants.jpg")
-            leftImage.image = cell.clothingImage.image
-            println(cell.clothingText.text)
+            leftImage.image = currentCell.clothingImage!.image
+            println(currentCell.clothingText!.text)
     }
     
     /**
@@ -125,9 +135,6 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
     //Sets up cell
     func collectionView(collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        println("--")
-            println (indexPath)
-        println("--")
             
         let cell:ClothingCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as ClothingCell
         
@@ -150,10 +157,58 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
         //cell.layer.shadowOffset = CGSizeMake(8, 0)
         //cell.layer.shadowOpacity = 1.0
         //cell.layer.shadowRadius = 7
-        
-        
         return cell
         
         }
+    
+    //WEBSITE TUTORIAL
+ /*
+    //1
+    var  selectedClothingIndexPath: NSIndexPath?
+    
+        {
+        didSet {
+            //2
+            var indexPaths = [NSIndexPath]()
+            if selectedClothingIndexPath != nil {
+                indexPaths.append(selectedClothingIndexPath!)
+            }
+            if oldValue != nil {
+                indexPaths.append(oldValue!)
+            }
+            //3
+            
+            self.collectionView.performBatchUpdates({
+                self.collectionView.reloadItemsAtIndexPaths(indexPaths)
+                return
+                },completion: nil){
+                    completed in
+                    //4
+                    if selectedClothingIndexPath != nil {
+                        self.collectionView?.scrollToItemAtIndexPath(
+                            self.largePhotoIndexPath!,
+                            atScrollPosition: .CenteredVertically,
+                            animated: true)
+                    }
+            }
+
+        }
+    }
+
+    
+    func collectionView(collectionView: UICollectionView,
+        shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+            
+            if selectedClothingIndexPath == indexPath {
+                selectedClothingIndexPath = nil
+            }
+            else {
+                selectedClothingIndexPath = indexPath
+            }
+            return false
+    }
+    
+   */
+    
 }
 
