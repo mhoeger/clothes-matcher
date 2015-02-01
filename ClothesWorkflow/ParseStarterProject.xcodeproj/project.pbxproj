@@ -25,7 +25,6 @@
 		E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */; };
 		E14ED25F1A7DD51300A2EF44 /* PurpleShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */; };
 		E14ED2601A7DD51300A2EF44 /* BlackPants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */; };
-		E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */; };
 		E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6541A7DA9470097C8D7 /* Clothing.swift */; };
 		E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleShirt.png; sourceTree = "<group>"; };
 		E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackPants.jpg; sourceTree = "<group>"; };
-		E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E1DCA6541A7DA9470097C8D7 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
 		E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +99,6 @@
 				E14ED25D1A7DD51300A2EF44 /* PurpleShirt.png */,
 				E14ED25E1A7DD51300A2EF44 /* BlackPants.jpg */,
 				E14ED2561A7DD21B00A2EF44 /* UserViewController.swift */,
-				E1DCA6531A7DA9470097C8D7 /* CustomCell.swift */,
 				E1DCA6541A7DA9470097C8D7 /* Clothing.swift */,
 				E1DCA6561A7DA9470097C8D7 /* ClothingCell.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
@@ -240,7 +237,6 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				E14ED2571A7DD21B00A2EF44 /* UserViewController.swift in Sources */,
 				E1DCA6581A7DA9470097C8D7 /* Clothing.swift in Sources */,
-				E1DCA6571A7DA9470097C8D7 /* CustomCell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				E1DCA65A1A7DA9470097C8D7 /* ClothingCell.swift in Sources */,
 				0C09AD421A7DD94000567DBC /* ParseKeys.swift in Sources */,

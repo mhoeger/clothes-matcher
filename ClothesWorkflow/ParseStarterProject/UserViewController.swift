@@ -160,55 +160,5 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
         
         }
-    
-    //WEBSITE TUTORIAL
- /*
-    //1
-    var  selectedClothingIndexPath: NSIndexPath?
-    
-        {
-        didSet {
-            //2
-            var indexPaths = [NSIndexPath]()
-            if selectedClothingIndexPath != nil {
-                indexPaths.append(selectedClothingIndexPath!)
-            }
-            if oldValue != nil {
-                indexPaths.append(oldValue!)
-            }
-            //3
-            
-            self.collectionView.performBatchUpdates({
-                self.collectionView.reloadItemsAtIndexPaths(indexPaths)
-                return
-                },completion: nil){
-                    completed in
-                    //4
-                    if selectedClothingIndexPath != nil {
-                        self.collectionView?.scrollToItemAtIndexPath(
-                            self.largePhotoIndexPath!,
-                            atScrollPosition: .CenteredVertically,
-                            animated: true)
-                    }
-            }
-
-        }
-    }
-
-    
-    func collectionView(collectionView: UICollectionView,
-        shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-            
-            if selectedClothingIndexPath == indexPath {
-                selectedClothingIndexPath = nil
-            }
-            else {
-                selectedClothingIndexPath = indexPath
-            }
-            return false
-    }
-    
-   */
-    
 }
 
