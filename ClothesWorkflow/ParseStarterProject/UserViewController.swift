@@ -14,64 +14,51 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
+    let USERNAME = "josiah"
+    
+    private struct ClothesStore {
+        var clothesArray:[AnyObject] = []
+    }
+    private var myStore = ClothesStore()
 
     
-    //Replace this with database of clothes matching
-    //Hashable? if dictionary, "Clothing" type must be.
     var clothesArray: [Clothing] = [Clothing]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setUpClothing()
+        self.loadClothing()
         self.myCollectionView.delegate = self
         self.myCollectionView.dataSource = self
     }
 
- /*   func loadButtons(button: UIButton){
-        let buttonImage = UIImage(named: "PurpleShirt.jpg") as UIImage?
-        let button   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        button.frame = CGRectMake(40, 40, 100, 100)
-        button.setImage(buttonImage, forState: UIControlState.Normal)
-        //button.setImage(image, forState: .Normal)
-        button.addTarget(self, action: "btnTouched:", forControlEvents: UIControlEvents.TouchUpInside)
-        self.view.addSubview(button)
-    }
-*/
-/*
-    @IBAction func btnTouched(sender : AnyObject?){
-        rightImage.image = UIImage(named: "BlackPants.jpg")
-        
-        //rightImage.image = sender.imageForState(.Normal)
-
-        /*if (touchTrue){
-            rightImage.image = sender.imageForState(.Normal)
-                //UIImage(named: "PurpleShirt.jpg")
-            touchTrue = false
-        }
-        else{
-            rightImage.image = UIImage(named: "BlackPants.jpg")
-            touchTrue = true
-        }*/
-    }
-*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    func setUpClothing() {
-        var testClothing1 = Clothing(itemType: "Shirt", mainColor: "Purple", myImage: "PurpleShirt.jpg", description: "purple shirt")
-        var testClothing2 = Clothing(itemType: "Pants", mainColor: "Black", myImage: "BlackPants.jpg", description: "black pants")
-        
-        clothesArray.append(testClothing1)
-        clothesArray.append(testClothing2)
-        
+    /**
+        Load a UserView list of clothing items for this particular user. 
+        TODO: Do this cleverly with local datastore and caching
+    */
+    func loadClothing() {
+        var query = PFQuery(className: "ClothingItem")
+        query.whereKey("user", equalTo: USERNAME)
+        query.findObjectsInBackgroundWithBlock {
+            (clothesStore: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                self.myCollectionView.reloadData()
+                self.myStore.clothesArray = clothesStore
+                println("Successfully retrieved \(clothesStore.count) scores.")
+            } else {
+                println("Error: %@ %@", error, error.userInfo!)
+            }
+        }
     }
     
     //The number of items displayed in the collection
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return clothesArray.count
+        return self.myStore.clothesArray.count
     }
     
     override func supportedInterfaceOrientations() -> Int {
@@ -81,19 +68,11 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     //Action after selecting item
     func collectionView(collectionView: UICollectionView,
-        didSelectItemAtIndexPath indexPath: NSIndexPath){
-            //let indexPath = collectionView.indexPathsForSelectedItems()
-            //if (indexPath.count == 0){
-              //  println("EMPTY.")
-            //}
+        didSelectItemAtIndexPath indexPath: NSIndexPath) {
+            
             let currentCell:ClothingCell = collectionView.cellForItemAtIndexPath(indexPath) as ClothingCell
-                //[0] as NSIndexPath) as CustomCell
-
-            //let indexPath = collectionView.indexPathsForSelectedItems()
-            //let currentCell:CustomCell = collectionView.cellForItemAtIndexPath(indexPath) as CustomCell
             rightImage.image = UIImage(named:"BlackPants.jpg")
             leftImage.image = currentCell.clothingImage!.image
-            println(currentCell.clothingText!.text)
     }
     
     /**
@@ -135,14 +114,19 @@ class UserViewController: UIViewController, UICollectionViewDataSource, UICollec
         if indexPath.row % 2 == 0{
             cell.backgroundColor = UIColor.blueColor()
         }
-        else{
+        else {
             cell.backgroundColor = UIColor.whiteColor()
         }
         
-        let clothing = clothesArray[indexPath.row]
-        //cell.myButton.addTarget(self, action: "btnTouched:", forControlEvents: UIControlEvents.TouchUpInside)
-        cell.setCell(clothing.description, clothingImageFilename: clothing.myImage)
+        let clothing:AnyObject = myStore.clothesArray[indexPath.row]
+            
+        println("Reached collection view")
+        let userImageFile = clothing["image"] as PFFile
+        let image = UIImage(data:userImageFile.getData()) as UIImage!
+        let description = clothing["description"] as String!
+        cell.setCell(description, clothingImageIn:image)
         cell.layer.cornerRadius = 7
+            
         //ALL BELOW FOR COLOR BORDER
         //cell.layer.masksToBounds = true
         //cell.layer.borderWidth = 4
